@@ -396,13 +396,13 @@ int getFeaturePoints(Mat& frame_bgr, vector<Point>& feature_points)
 		feature_points.push_back(eye_corners[i]);
 	feature_points.push_back(iris_centers[0]);
 	feature_points.push_back(iris_centers[1]);
-    feature_points.push_back(Point(binocular_roi.width, binocular_roi.height));
-	//feature_points.push_back(nostril_centers[0]);
-	//feature_points.push_back(nostril_centers[1]);
-	//feature_points.push_back(mouth_corners[0]);
-	//feature_points.push_back(mouth_corners[1]);
+    //feature_points.push_back(Point(binocular_roi.width, binocular_roi.height));
+	feature_points.push_back(nostril_centers[0]);
+	feature_points.push_back(nostril_centers[1]);
+	feature_points.push_back(mouth_corners[0]);
+	feature_points.push_back(mouth_corners[1]);
 
-	if (feature_points.size() < 10) return -1;
+	if (feature_points.size() != 10) return -1;
 	return 0;
 }
 
