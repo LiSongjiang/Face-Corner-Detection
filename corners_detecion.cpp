@@ -298,7 +298,7 @@ int getFeaturePoints(Mat& frame_bgr, vector<Point>& feature_points)
 		eye_corners[2] = detected_eye_corners[1][corner_select_left];
 		eye_corners[3] = detected_eye_corners[1][corner_select_right];
 	}
-    /*
+    
 	equalizeHist(frame_thresh(nose_roi), frame_thresh(nose_roi));
 	equalizeHist(frame_thresh(mouth_roi), frame_thresh(mouth_roi));
 	threshold(frame_thresh(nose_roi), frame_thresh(nose_roi), 15, 100, CV_THRESH_BINARY_INV);
@@ -391,7 +391,7 @@ int getFeaturePoints(Mat& frame_bgr, vector<Point>& feature_points)
 		mouth_corners[0] = Point(mouth_corners_tmp[0].x + mouth_roi.x, mouth_corners_tmp[0].y + mouth_roi.y);
 		mouth_corners[1] = Point(mouth_corners_tmp[1].x + mouth_roi.x, mouth_corners_tmp[1].y + mouth_roi.y);
 	}
-*/
+
 	for (int i = 0; i < 4; i++)
 		feature_points.push_back(eye_corners[i]);
 	feature_points.push_back(iris_centers[0]);
@@ -402,7 +402,7 @@ int getFeaturePoints(Mat& frame_bgr, vector<Point>& feature_points)
 	//feature_points.push_back(mouth_corners[0]);
 	//feature_points.push_back(mouth_corners[1]);
 
-	if (feature_points.size() < 6) return -1;
+	if (feature_points.size() < 10) return -1;
 	return 0;
 }
 
