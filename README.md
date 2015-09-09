@@ -4,9 +4,9 @@
 
 ##Intro.
 
-Detect eye corners, pupil center, nostrils and mouth corners at low cost.
+Detect eye corners, pupil center, nostrils and mouth corners at low cost. 
 
-使用`OpenCV`，快速检测**正脸**上的双眼**眼角**，**瞳孔中心**，**鼻孔**和**嘴角**。
+使用`OpenCV`，快速检测**正脸**上的双眼**眼角**，**瞳孔中心**，**鼻孔**和**嘴角**，同时增加了**运动跟踪模式**和**眨眼检测**
 
 ##Files
 
