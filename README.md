@@ -1,5 +1,7 @@
 # Face-Corner-Detection
 
+###ver 1.3
+
 ##Intro.
 
 Detect eye corners, pupil center, nostrils and mouth corners at low cost.
@@ -19,9 +21,9 @@ Detect eye corners, pupil center, nostrils and mouth corners at low cost.
 
 ##Info.
 
-Version 1.0
+Version 1.3
 
-2015-9-6
+2015-9-9
 
 MrZigZag @ Peking University
 
